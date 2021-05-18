@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <!--<domain includeSubdomains="true">adresseIP</domain>-->
+        <!-- Domaine ou IP à changer en fonction de là où on est connecté, faire un IPConfig -->
+    </domain-config>
+</network-security-config>

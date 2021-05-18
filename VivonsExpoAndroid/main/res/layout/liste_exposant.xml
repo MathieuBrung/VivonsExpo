@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_grey"
+    android:layout_marginBottom="20dp"
+    android:padding="5dp"
+    android:id="@+id/constraint_Exposant">
+
+    <ImageView
+        android:id="@+id/imageView_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/textView_raisonSociale"
+        style="@style/textViewFormulaire"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Raison sociale"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView_logo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_activite"
+        style="@style/textViewFormulaire"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Activité"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout_emplacement_visiteur"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView_logo"
+        app:layout_constraintTop_toBottomOf="@+id/textView_raisonSociale" />
+
+    <!--<TextView
+        android:id="@+id/textView_stand"
+        style="@style/textViewFormulaire"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Emplacement"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView_logo" />-->
+
+    <TableLayout
+        android:id="@+id/tableLayout_emplacement_visiteur"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_logo"
+        app:layout_constraintEnd_toEndOf="@+id/textView_activite"
+        app:layout_constraintStart_toStartOf="@+id/textView_activite">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView_stand_visiteur"
+                style="@style/textViewFormulaire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Stand"
+                android:textSize="12sp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView_allee_visiteur"
+                style="@style/textViewFormulaire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Allée"
+                android:textSize="12sp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView_travee_visiteur"
+                style="@style/textViewFormulaire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Travée"
+                android:textSize="12sp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView_hall_visiteur"
+                style="@style/textViewFormulaire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hall"
+                android:textSize="12sp"
+                android:textAlignment="center" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView_value_stand_visiteur"
+                style="@style/textViewFormulaire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="12sp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView_value_allee_visiteur"
+                style="@style/textViewFormulaire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="12sp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView_value_travee_visiteur"
+                style="@style/textViewFormulaire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="12sp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView_value_hall_visiteur"
+                style="@style/textViewFormulaire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="12sp"
+                android:textAlignment="center" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
