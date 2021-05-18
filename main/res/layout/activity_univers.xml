@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:padding="20dp"
+    tools:context=".controller.UniversActivity">
+
+    <ImageView
+        android:id="@+id/logo_salon_vivons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_salon_vivons_vgris_200px" />
+
+
+    <TextView
+        android:id="@+id/textView_secteur_libelle"
+        style="@style/textViewFormulaire"
+        android:text="Secteur"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_salon_vivons" />
+
+    <Spinner
+        android:id="@+id/spinner_secteur"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView_listeExposants"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_secteur_libelle" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_listeExposants"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_secteur">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

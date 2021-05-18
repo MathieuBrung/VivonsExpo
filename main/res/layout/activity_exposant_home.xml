@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:padding="20dp"
+    tools:context=".controller.ExposantHomeActivity">
+
+    <ImageView
+        android:id="@+id/logo_salon_vivons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_salon_vivons_vgris_200px" />
+
+
+    <TableLayout
+        android:id="@+id/tableLayout_emplacement_exposantHome"
+        style="@style/btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_salon_vivons">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="5dp">
+
+            <TextView
+                android:id="@+id/textView_titleTable_exposantHome"
+                style="@style/textViewFormulaire"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:text="Emplacement"
+                android:textAlignment="center" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="5dp">
+
+            <TextView
+                android:id="@+id/textView_stand_exposantHome"
+                style="@style/textViewFormulaire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Stand"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView_allee_exposantHome"
+                style="@style/textViewFormulaire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Allée"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView_travee_exposantHome"
+                style="@style/textViewFormulaire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Travée"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView_hall_exposantHome"
+                style="@style/textViewFormulaire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hall"
+                android:textAlignment="center" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="5dp">
+
+            <TextView
+                android:id="@+id/textView_value_stand_exposantHome"
+                style="@style/textViewFormulaire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView_value_allee_exposantHome"
+                style="@style/textViewFormulaire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView_value_travee_exposantHome"
+                style="@style/textViewFormulaire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView_value_hall_exposantHome"
+                style="@style/textViewFormulaire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="center" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_exposantHome_infos"
+        style="@style/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Mes informations"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout_emplacement_exposantHome" />
+
+    <Button
+        android:id="@+id/btn_exposantHome_demande"
+        style="@style/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Changement de stand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_exposantHome_infos" />
+</androidx.constraintlayout.widget.ConstraintLayout>
